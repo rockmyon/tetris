@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 테트리스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="info-panel">
+            <h2>테트리스</h2>
+            <p>점수: <span id="score">0</span></p>
+            <button id="start-button">시작 / 일시정지</button>
+            <div id="next-block-display">다음 블록</div>
+        </div>
+
+        <div id="game-board">
+            </div>
+
+        <div class="controls-mobile">
+            <div class="row">
+                <button id="btn-rotate" class="control-btn">🔄 회전</button>
+            </div>
+            <div class="row">
+                <button id="btn-left" class="control-btn">◀️ 왼쪽</button>
+                <button id="btn-right" class="control-btn">▶️ 오른쪽</button>
+            </div>
+            <div class="row">
+                <button id="btn-down" class="control-btn">⬇️ 소프트 드롭</button>
+                <button id="btn-hard-drop" class="control-btn">⏬ 하드 드롭</button>
+            </div>
+        </div>
+
+        <div id="game-over-message" class="hidden">
+            <h1>게임 오버!</h1>
+            <p>최종 점수: <span id="final-score">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
