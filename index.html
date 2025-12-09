@@ -2,37 +2,19 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>깃허브 실행 가능 테트리스</title>
+    <title>Tetris</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <div class="info-panel">
-            <h2>테트리스</h2>
-            <p>점수: <span id="score">0</span></p>
-            <div id="next-block-display">다음 블록</div>
-            <button id="start-button">시작 / 일시정지</button>
-        </div>
+    <h1>TETRIS</h1>
 
-        <div id="game-board">
-            </div>
+    <div id="tetris">
+        <canvas id="board" width="300" height="600"></canvas>
 
-        <div class="controls-mobile">
-            <div class="row"><button id="btn-rotate" class="control-btn rotate">🔄</button></div>
-            <div class="row direction-controls">
-                <button id="btn-left" class="control-btn">◀️</button>
-                <button id="btn-right" class="control-btn">▶️</button>
-            </div>
-            <div class="row drop-controls">
-                <button id="btn-down" class="control-btn drop">⬇️</button>
-                <button id="btn-hard-drop" class="control-btn hard-drop">⏬</button>
-            </div>
-        </div>
-
-        <div id="game-over-message" class="hidden">
-            <h1>게임 오버!</h1>
-            <p>최종 점수: <span id="final-score">0</span></p>
+        <div id="info">
+            <h2>Score</h2>
+            <div id="score">0</div>
+            <button id="startBtn">Start</button>
         </div>
     </div>
 
